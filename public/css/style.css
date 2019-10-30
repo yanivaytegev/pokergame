@@ -1,0 +1,376 @@
+
+body, html {
+    height: 100%;
+  }
+
+
+.poker-table {
+    background-image: url('../images/PNG/poker_table.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    background-size:75%; 
+}
+
+.wrapper {
+    text-align: center;
+}
+
+
+.button {
+    font-size: 1em;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #06D85F;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    position: absolute;
+    top: 59%;
+    left:42%;
+}
+.button:hover {
+    background: #06D85F;
+    }
+
+.seat {
+    width:150px;
+    height:100px;
+    position: absolute;
+}
+
+.name-chips {
+    width:140px;
+    height:33px;
+    background-color:gray;
+    font-size: 14px;
+    color:white;
+    text-align: center;
+    top:50px;
+    left: -22px;
+    position:absolute;
+    border-radius: 2px;
+}
+
+.player-name {
+    width:100%;
+}
+
+.card {
+    width: 55px;
+    height: 81px;
+    /* background-image: url('../images/PNG/back.png'); */
+    background-size: 100%;
+}
+
+.holecards {
+    width:102px;
+    height:73px;
+    float:left;
+    position:absolute;
+    left:20;
+    top:0;
+}
+
+.holecard1 {
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+.holecard2 {
+    position:absolute;
+    left:50px;
+    top:0;
+}
+
+#seat2 {
+    left: 80%;
+    top: 46%;
+}
+
+.seat2-button {
+    left:655px;
+    top:215px;
+}
+
+#seat2 .bet {
+    left: 11%;
+    top: 47%;
+}
+
+
+#seat5 {
+    left: 11%;
+    top: 47%;
+}
+.seat5-button {
+    left:125px;
+    top:215px;
+}
+#seat5 .bet {
+    left:155px;
+    top:75px;
+}
+
+#board {
+    position:absolute;
+    left: 37%;
+    top: 45%;
+}
+
+/* #pot {
+    position: absolute;
+    left:325;
+    top:245px;
+    font-size: 12px;
+    color:white;
+    text-align: center;
+} */
+
+/* .boardcard {
+    width:50px;
+    height:73px;
+    position: absolute;
+    left:0;
+    top:0;
+} */
+
+#flop5 {
+    position: absolute;
+    border-radius: 7px;
+    top: 4px;
+	
+}
+
+#flop6 {
+    position: absolute;
+    border-radius: 5px;
+    top: 6px;
+    left: 64px;
+}
+
+#flop7 {
+    position: absolute;
+    border-radius: 5px;
+    top: 6px;
+    left:128px;
+}
+
+#flop8 {
+    position: absolute;
+    border-radius: 5px;
+    top: 6px;
+    left:192px;
+}
+
+#flop9 {
+    position: absolute;
+    border-radius: 5px;
+    top: 6px;
+    left:256px;
+}
+
+
+.button3 {
+    font-size: 1em;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #06D85F;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    position: absolute;
+    left:52%;
+    top: 59%;
+}
+
+.button3:hover {
+    background: #06D85F;
+}
+  
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.popup {
+    margin: 70px auto;
+    padding: 50px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+  
+.popup .close:hover {
+    color: #06D85F;
+}
+  
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+.button1 {
+    border: none;
+    background: #404040;
+    color: #ffffff !important;
+    font-weight: 100;
+    padding: 20px;
+    text-transform: uppercase;
+    text-decoration:none;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+.button1:hover {
+        color: #404040 !important;
+        font-weight: 700 !important;
+        letter-spacing: 3px;
+        background: none;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.3s ease 0s;
+}
+  
+@media screen and (min-width: 1250px){
+
+.card{
+    width: 72px;
+    height: 106px;
+}
+#board{
+    top: 42%;
+}
+.name-chips{
+    top:76px;
+    left:-10px;
+}
+#flop6{
+    left:79px
+}#flop7{
+    left:158px
+}#flop8{
+    left:237px
+}#flop9{
+    left:316px
+}
+}
+
+@media screen and (max-width: 900px){
+  
+    #board{
+        position: absolute;
+        left: 33%;
+        top: 46%;
+    }
+    .button{
+        left : 35%;
+    }
+    .button3{
+        left:53%;
+    }
+}
+
+@media screen and (max-width: 750px){
+
+    .card{
+        width: 44px;
+        height: 67px;
+    }
+
+    #flop6{
+        left: 50px;
+
+    }
+    #flop7{
+        left: 100px;
+
+    }
+    #flop8{
+        left: 150px;
+
+    }
+    #flop9{
+        left: 200px;
+    }
+}
+
+
+@media screen and (max-width: 500px){ 
+
+       .body,html{
+           background-image: url('../images/PNG/poker_table1.png');
+           background-repeat: no-repeat;
+           background-position: center;
+           height: 100%;
+           background-size:90%;
+        }
+       .poker-table{
+           background-image: none;
+        transform: rotate(-90deg); 
+        height: 100%;
+        background-size: 100%;
+        }
+
+        h1{
+            display: none;
+        }
+
+        #seat2{
+            left: 113%;
+        } 
+        #seat5{
+            left: -35%;
+        }
+        #board{
+            left: 15%;
+        }
+
+        .button{
+            left: 18%;
+        }
+        .overlay{
+            left: -55%;
+            right: -50%;
+            top: 15%;
+
+        }
+      
+}
+
+
